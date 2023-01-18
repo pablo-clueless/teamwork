@@ -10,7 +10,6 @@ specifiers:
   axios: ^1.2.2
   eslint: ^8.32.0
   eslint-plugin-react: ^7.32.1
-  husky: ^8.0.0
   jwt-decode: ^3.1.2
   postcss: ^8.4.19
   prettier: 2.8.1
@@ -53,7 +52,6 @@ devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.21
   eslint: 8.32.0
   eslint-plugin-react: 7.32.1_eslint@8.32.0
-  husky: 8.0.3
   postcss: 8.4.21
   prettier: 2.8.1
   prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.1
@@ -1587,12 +1585,6 @@ packages:
     dependencies:
       react-is: 16.13.1
     dev: false
-
-  /husky/8.0.3:
-    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
-    engines: {node: '>=14'}
-    hasBin: true
-    dev: true
 
   /ignore/5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
