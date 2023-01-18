@@ -17,6 +17,6 @@
 		"jsx": "react-jsx",
 		"baseUrl": "./src"
 	},
-	"include": ["src", "craco.config.cjs"],
+	"include": ["src"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }

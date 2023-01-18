@@ -19,11 +19,23 @@ export const ErrorFallback = ({
 			</p>
 			{process.env.NODE_ENV === 'development' ||
 			process.env.APP_STAGING === 'true' ? (
-				<pre className="mt-5 bg-white py-3 px-5">{error.message}</pre>
+				<pre className="mt-5 bg-white py-3 px-5 font-semibold">
+					{error.message}
+				</pre>
 			) : null}
-			<button onClick={resetErrorBoundary} className="mt-7 py-3 px-8">
-				Try again
-			</button>
+
+			<div className="flex items-center gap-10">
+				<button
+					onClick={resetErrorBoundary}
+					className="mt-7 rounded bg-red-700 py-3 px-8 text-sm text-white">
+					Try again
+				</button>
+				<button
+					onClick={resetErrorBoundary}
+					className="mt-7 rounded bg-white py-3 px-8 text-sm text-red-800">
+					Go back home
+				</button>
+			</div>
 		</div>
 	)
 }
