@@ -7,7 +7,17 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
-		"preinstall": "npx only-allow pnpm"
+		"preinstall": "npx only-allow pnpm",
+		"prepare": "cd && husky install .husky",
+		"lint-client": "lint-staged"
+	},
+	"lint-staged": {
+		"*.{js,ts,tsx, jsx}": [
+			"eslint --quiet --fix"
+		],
+		"*.{json,js,jsx,ts,tsx}": [
+			"prettier --write"
+		]
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.9.1",
@@ -28,11 +38,13 @@
 	"devDependencies": {
 		"@types/react": "^18.0.17",
 		"@types/react-dom": "^18.0.6",
+		"@typescript-eslint/eslint-plugin": "^5.48.2",
 		"@vitejs/plugin-react": "^2.1.0",
 		"autoprefixer": "^10.4.13",
 		"eslint": "^8.32.0",
 		"eslint-plugin-react": "^7.32.1",
-		"husky": "^8.0.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.1.0",
 		"postcss": "^8.4.19",
 		"prettier": "2.8.1",
 		"prettier-plugin-tailwindcss": "^0.2.1",
