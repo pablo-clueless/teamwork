@@ -1,9 +1,13 @@
-import React from 'react'
+import { ErrorFallback } from 'components/shared/ErrorFallback'
+import { Home } from 'pages/Home'
+import { ErrorBoundary } from 'react-error-boundary'
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
+	return (
+		<ErrorBoundary FallbackComponent={ErrorFallback}>
+			<Home />
+		</ErrorBoundary>
+	)
 }
 
 export default App

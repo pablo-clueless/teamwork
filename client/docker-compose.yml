@@ -1,0 +1,6 @@
+version: "3"
+services:
+  client:
+    image: client-app
+    ports:
+      - 4173:4173
