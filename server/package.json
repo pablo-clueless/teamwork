@@ -7,11 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "npx tsc",
     "tsc:init": "npx tsc --init",
-    "build": "rimraf dist && npx tsc",
+    "build": "rimraf dist && npx tsc --project .",
     "prestart": "npm run build",
-    "start": "node dist/index.js",
+    "start": "node dist/server.js",
     "predev": "npm run build",
-    "dev": "concurrently  \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+    "dev": "concurrently  \"npx tsc --watch\" \"nodemon -q dist/server.js\""
   },
   "keywords": [],
   "author": "",
