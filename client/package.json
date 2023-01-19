@@ -12,10 +12,8 @@
 		"lint-client": "lint-staged"
 	},
 	"lint-staged": {
-		"*.{js,ts,tsx, jsx}": [
-			"eslint --quiet --fix"
-		],
-		"*.{json,js,jsx,ts,tsx}": [
+		"*.{js,ts,tsx,jsx}": [
+			"eslint --quiet --fix",
 			"prettier --write"
 		]
 	},
