@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"lib": ["ES6", "ESNext"],
+		"target": "es2016",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"outDir": "./build",
+		"rootDir": "./",
+		"forceConsistentCasingInFileNames": true,
+		"esModuleInterop": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"noImplicitAny": true,
+		// "sourceMap": true,
+		"skipLibCheck": true
+	}
+}
