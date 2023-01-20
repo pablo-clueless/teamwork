@@ -5,21 +5,14 @@ specifiers:
   '@types/node': ^18.11.18
   '@types/react': ^18.0.17
   '@types/react-dom': ^18.0.6
-<<<<<<< HEAD
   '@types/react-router-dom': ^5.3.3
-=======
   '@typescript-eslint/eslint-plugin': ^5.48.2
->>>>>>> 882e1caf6dbc20dcf25cc19851a5cfcaac7a3754
   '@vitejs/plugin-react': ^2.1.0
   autoprefixer: ^10.4.13
   axios: ^1.2.2
   eslint: ^8.32.0
   eslint-plugin-react: ^7.32.1
-<<<<<<< HEAD
-  husky: ^8.0.0
-=======
   husky: ^8.0.3
->>>>>>> 882e1caf6dbc20dcf25cc19851a5cfcaac7a3754
   jwt-decode: ^3.1.2
   lint-staged: ^13.1.0
   postcss: ^8.4.19
@@ -66,10 +59,7 @@ devDependencies:
   eslint: 8.32.0
   eslint-plugin-react: 7.32.1_eslint@8.32.0
   husky: 8.0.3
-<<<<<<< HEAD
-=======
   lint-staged: 13.1.0
->>>>>>> 882e1caf6dbc20dcf25cc19851a5cfcaac7a3754
   postcss: 8.4.21
   prettier: 2.8.1
   prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.1
@@ -1896,14 +1886,11 @@ packages:
       react-is: 16.13.1
     dev: false
 
-<<<<<<< HEAD
-=======
   /human-signals/3.0.1:
     resolution: {integrity: sha512-rQLskxnM/5OCldHo+wNXbpVgDn5A17CUoKX+7Sokwaknlq7CdSnphy0W39GU8dw59XiCXmFXDg4fRuckQRKewQ==}
     engines: {node: '>=12.20.0'}
     dev: true
 
->>>>>>> 882e1caf6dbc20dcf25cc19851a5cfcaac7a3754
   /husky/8.0.3:
     resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
     engines: {node: '>=14'}
