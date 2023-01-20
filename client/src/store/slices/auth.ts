@@ -41,11 +41,11 @@ const auth = createSlice({
             localStorage.removeItem('team-menber')
         },
     },
-    extraReducers: (builder) => {
-        builder.addCase(getProfile.pending, (state, action) => {}),
-        builder.addCase(getProfile.fulfilled, (state, action) => {}),
-        builder.addCase(getProfile.rejected, (state, action) => {})
-    },
+    // extraReducers: (builder) => {
+    //     builder.addCase(getProfile.pending, (state, action) => {}),
+    //     builder.addCase(getProfile.fulfilled, (state, action) => {}),
+    //     builder.addCase(getProfile.rejected, (state, action) => {})
+    // },
 })
 
 export const {login, logout} = auth.actions
