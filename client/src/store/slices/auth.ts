@@ -38,7 +38,7 @@ const auth = createSlice({
         logout: (state) => {
             state.user = null
             state.isLoggedIn = false
-            localStorage.removeItem('team-menber')
+            localStorage.removeItem('teamwork-member')
         },
     },
     // extraReducers: (builder) => {
