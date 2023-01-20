@@ -1,6 +1,12 @@
-import { Schema, model } from "mongoose";
+import { Schema, model, Types } from "mongoose";
 
-const eventSchema = new Schema(
+interface Event {
+  title: string;
+  createdBy: Types.ObjectId;
+  endsOn: Date;
+}
+
+const eventSchema = new Schema<Event>(
   {
     title: {
       required: true,

@@ -1,6 +1,13 @@
-import { Schema, model } from "mongoose";
+import { Schema, model, Types } from "mongoose";
 
-const commentSchema = new Schema(
+
+interface Comment {
+  createdBy: Types.ObjectId;
+  body: string;
+  comments?: Types.ObjectId[]
+}
+
+const commentSchema = new Schema<Comment>(
   {
     createdBy: {
       type: Schema.Types.ObjectId,

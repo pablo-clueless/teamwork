@@ -1,6 +1,15 @@
-import { Schema, model } from "mongoose";
+import { Schema, model, Types } from "mongoose";
 
-const postSchema = new Schema(
+
+interface Post {
+  createdBy: Types.ObjectId,
+  image?: string;
+  body: string;
+  comments: Types.ObjectId[];
+   likes?: number;
+}
+
+const postSchema = new Schema<Post>(
   {
     createdBy: {
       type: Schema.Types.ObjectId,

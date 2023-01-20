@@ -1,6 +1,19 @@
-import { Schema, model } from "mongoose";
+import { Schema, model, Types } from "mongoose";
 
-const userSchema = new Schema(
+
+interface User  {
+  email: string;
+  name: string;
+  password: string;
+  username: string;
+  events?: Types.ObjectId[];
+  followers?: Types.ObjectId[];
+  following?: Types.ObjectId[];
+  posts?: Types.ObjectId[];
+  isVerified?: boolean;
+}
+
+const userSchema = new Schema<User>(
   {
     email: {
       type: String,

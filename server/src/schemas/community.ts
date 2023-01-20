@@ -1,6 +1,14 @@
-import { Schema, model } from "mongoose";
+import { Schema, model, Types } from "mongoose";
 
-const communitySchema = new Schema(
+
+interface Community {
+  title: string;
+  createdBy: Types.ObjectId;
+  members?: Types.ObjectId[];
+  events?: Types.ObjectId[]
+}
+
+const communitySchema = new Schema<Community>(
   {
     title: {
       required: true,
