@@ -7,6 +7,7 @@ const HTTP = {
     NOT_FOUND: 404,
     SERVER_ERROR: 500,
     UNPROCESSABLE_ENTITY: 422,
+    CONFLICT_ERROR: 409,
 }
 
 export default HTTP
