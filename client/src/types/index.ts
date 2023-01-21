@@ -1,6 +1,6 @@
 
 export type UserProfileType = {
-   id: string
+   _id: string
    email: string
    events: string[] | []
    followers?: string[] | []
@@ -13,7 +13,7 @@ export type UserProfileType = {
 }
 
  export type PostType = {
-   id: string
+   _id: string
    image: string
    body: string
    createdAt: Date
@@ -23,7 +23,7 @@ export type UserProfileType = {
  }
  
  export type CommentType = {
-   id: string
+   _id: string
    body: string
    createdAt: Date
    createdBy: string[] | []
@@ -32,7 +32,7 @@ export type UserProfileType = {
  }
  
  export type UserCommunityType = {
-   id: string
+   _id: string
    createdAt: Date
    createdBy: string[] | []
    events: string[] | []
@@ -41,7 +41,7 @@ export type UserProfileType = {
  }
  
  export type UserEventType = {
-   id: string
+   _id: string
    createdAt: Date
    createdBy: string[] | []
    endsOn: Date
