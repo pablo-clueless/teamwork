@@ -1,12 +1,13 @@
 import Joi from "joi";
+import { ValidationSchema } from "../types";
 
 //TODO: this is still in progress.
 
-export const signInSchema = {
-    inputSchema: Joi.object().keys({
-        firstname: Joi.string().required(),
-        lastname: Joi.string().required(),
+export const signInSchema: ValidationSchema = {
+    bodySchema: Joi.object().keys({
+        name: Joi.string().required(),
         email: Joi.string().required(),
-        username: Joi.string().required()
+        username: Joi.string().required(),
+        password: Joi.string().required()
     })
 }
