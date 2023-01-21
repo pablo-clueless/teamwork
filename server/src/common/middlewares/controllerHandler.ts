@@ -1,11 +1,13 @@
 import { NextFunction, Request, Response } from "express";
 import { ValidationSchema } from "../types";
 import { joiValidation } from "./joiValidation";
-import { UnProcessibleError } from "../helpers/unProcessibleError";
+import { UnProcessibleError } from "../errors/unProcessibleError";
 import HTTP from "../constants/http";
 
 
 type AnyFunction = (...args: any[]) => any;
+
+type ExpressCallBackFunction = (req: Request, res: Response, next: NextFunction) => Promise<void>
 
 const parseControllerArgs = (req: Request) => {
     return {
@@ -17,8 +19,8 @@ const parseControllerArgs = (req: Request) => {
 }
 
 
-export const controllerHandler = (controllerFunction: AnyFunction, schema: ValidationSchema | undefined = {}) => {
-    return (req: Request, res: Response, next: NextFunction) => {
+export const controllerHandler = (controllerFunction: AnyFunction, schema: ValidationSchema | undefined = {}): ExpressCallBackFunction => {
+    return async (req: Request, res: Response, next: NextFunction) => {
         const controllerArgs = parseControllerArgs(req);
         const { body, params, query } = controllerArgs;
 
