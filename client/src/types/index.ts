@@ -1,18 +1,53 @@
 
 export type UserProfileType = {
-   id: string
-   createdOn: string | Date | null
-   createdBy: string | null
-   updatedOn: string | Date | null
-   updatedBy: string | null
-   deletedOn: string | Date | null
-   deletedBy: string | null
+   _id: string
    email: string
-   user_id: string
+   events: string[] | []
    followers?: string[] | []
-   followering?: string[] | []
-   picture?: object | string | null
+   following?: string[] | []
+   isVerified: boolean
+   name: string
+   password: string
+   posts: string[] | []
+   username: string
 }
+
+ export type PostType = {
+   _id: string
+   image: string
+   body: string
+   createdAt: Date
+   createdBy: string[] | []
+   comments: string[] | []
+   likes: number
+ }
+ 
+ export type CommentType = {
+   _id: string
+   body: string
+   createdAt: Date
+   createdBy: string[] | []
+   comments: string[] | []
+   likes: number
+ }
+ 
+ export type UserCommunityType = {
+   _id: string
+   createdAt: Date
+   createdBy: string[] | []
+   events: string[] | []
+   members: string[] | []
+   name: string
+ }
+ 
+ export type UserEventType = {
+   _id: string
+   createdAt: Date
+   createdBy: string[] | []
+   endsOn: Date
+   title: string
+ }
+ 
 
 
 
