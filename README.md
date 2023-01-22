@@ -42,6 +42,8 @@ A project to build effective teamwork and communication.
 <img src="/docs/Screenshot from 2023-01-18 22-28-05.png" alt="server folder" style="height: 20%; width:70%;"/>
 </p>
 
+- if you want to see your running containers `docker ps`
+
 
 ### Note 
 - If you're on linux you might need to use `sudo ` beofre all commands listed above
