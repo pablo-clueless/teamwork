@@ -4,12 +4,12 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"preinstall": "npx only-allow pnpm",
 		"tsc": "npx tsc",
 		"tsc:init": "npx tsc --init",
 		"build": "rimraf build && npx tsc",
 		"prestart": "pnpm build",
 		"start": "node build/index.js",
-		"preinstall": "pnpx only-allow pnpm",
 		"predev": "pnpm build",
 		"dev": "concurrently  \"pnpx tsc --watch\" \"nodemon -q build/index.js\""
 	},
