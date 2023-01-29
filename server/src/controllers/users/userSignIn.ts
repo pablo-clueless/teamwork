@@ -6,7 +6,7 @@ import { userModel } from "../../models";
 
 
 
-export const signIn = async ({ body }: ControllerArgs) => {
+export const signUp = async ({ body }: ControllerArgs) => {
     const { email, name, password, username } = body;
 
     const userExists = await userModel.find({ email });
