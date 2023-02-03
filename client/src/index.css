@@ -37,11 +37,36 @@ html {
 }
 
 body {
-	background: '#fff';
+	@apply min-h-screen bg-veryDark;
 	font-family: var(--body-font);
 	overflow-x: hidden;
 }
 
 input:-webkit-autofill {
 	transition: background-color 5000s ease-in-out 0s;
+}
+img,
+pictures {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+/* Layout */
+.home {
+	@apply grid min-h-screen;
+	grid-template-areas:
+		'sidebar navbar'
+		'sidebar content';
+	grid-template-rows: auto 1fr;
+}
+
+.header {
+	grid-area: navbar;
+}
+.content {
+	grid-area: content;
+}
+.sidebar {
+	@apply bg-dark text-white shadow-md shadow-slate-800;
+	grid-area: sidebar;
 }
